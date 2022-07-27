@@ -1,0 +1,255 @@
+.single-product-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.single-product-contents{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-product-details{
+    width: 90%;
+    height: auto;
+}
+
+.single-product-image{
+    width: 70%;
+    height: 70%;
+}
+
+.single-product-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.category{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:800;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    color: grey;
+}
+
+.product-name{
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 26px;
+}
+
+.description{
+    font-size: 18px;
+    color: darkslategrey;
+    text-transform: lowercase;
+    margin-bottom: 22px;
+}
+
+.price{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+span{
+    font-size: 22px;
+    margin-left: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.shop-2{
+    padding: 12px 16px;
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    margin-top: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out ;
+    cursor: crosshair;
+
+}
+
+.shop-2:hover{
+    letter-spacing: 2px;
+}
+
+.star img{
+    width: 20px;
+    height: 20px;
+}
+
+.rating{
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+@media screen and (max-width:900px){
+    .single-product-container{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    
+    .single-product-contents{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .single-product-contents{
+        width: 90%;
+        height: auto;
+    }
+    
+    .left{
+        width: 70%;
+        height: auto;
+        margin-bottom: 46px;
+    }
+    
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    
+    .single-product-details{
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .star img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .rating{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .category{
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 16px;
+    }
+    
+    .product-name{
+        font-size: 33px;
+        margin-bottom: 18px;
+    }
+    
+    .description{
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+    
+    .price{
+        font-size: 34px;
+    }
+
+    .shop-2{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:520px){ 
+
+    .single-product-container{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .single-product-contents{
+        width: 90%;
+        height: auto;
+    }
+    
+    .left{
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    
+    .single-product-details{
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .star img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .rating{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .category{
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+    }
+    
+    .product-name{
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    
+    .description{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .price{
+        font-size: 32px;
+    }
+    
+    span{
+        font-size: 18px;
+    }
+    
+    .shop-2{
+        padding: 12px 16px;
+        background-color: black;
+        font-size: 14px;
+        color: white;
+        margin-top: 22px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all .5s ease-in-out ;
+        cursor: crosshair;
+        margin-bottom: 50px;
+    
+    }
+}

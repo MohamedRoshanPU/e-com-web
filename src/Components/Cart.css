@@ -1,0 +1,155 @@
+.cart-container{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    width: 40%;
+    height: 100vh;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+}
+
+h5{
+
+font-size: 28px;
+text-align: center;
+margin-top: 50%;
+
+}
+
+.cart-container-active{
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        width: 40%;
+        height: 100vh;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cart-contents{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    overflow: scroll;
+}
+
+.cart-contents::-webkit-scrollbar{
+    display: none;
+}
+
+.cart-products{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0,.3);
+    border-radius: 20px ;
+}
+
+.image{
+    width:100px;
+    height: 120px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.add-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name-price h4{
+
+    font-size: 18px;
+    margin-bottom: 18px;
+
+}
+
+.add-buttons button{
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.add-buttons p{
+    margin-inline: 10px;
+}
+
+.cart-heading{
+    width: 100%;
+    background-color: white;
+}
+
+@media screen and (max-width:800px){
+    .cart-container{
+        width: 100%;
+    }
+
+    .cart-container-active{
+        width: 100%;
+    }
+
+    .cart-contents{
+        padding: 10px 10px;
+    }
+
+    .cart-products{
+        padding: 20px 10px;
+        margin-top: 25px;
+    }
+
+    .image{
+        max-width:70px;
+        max-height: 120px;
+    }
+    
+    .image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-name-price h4{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width:865px){
+
+    .cart-container{
+        width: 100%;
+    }
+
+    .cart-container-active{
+        width: 100%;
+    }
+    
+}
